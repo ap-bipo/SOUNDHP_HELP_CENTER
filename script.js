@@ -1,8 +1,3 @@
-/**
- * SoundHP Help Center - Interactive Scripts
- * Mobile Nav, Live Search, FAQ Accordion & Gmail Link Integration
- */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── 1. Navbar Scroll Effect ──────────────────────────────────────────
@@ -149,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return null;
     }
 
-    const emailSubject = `[SoundHP Support] ${category}: ${subject}`;
+    const emailSubject = `[Noisy Support] ${category}: ${subject}`;
     const emailBody = `Category: ${category}\nDevice / OS: ${device || 'Not specified'}\n\nDescription:\n${body}`;
 
     return { emailSubject, emailBody };
