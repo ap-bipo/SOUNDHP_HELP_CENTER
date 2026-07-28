@@ -697,22 +697,21 @@ select.form-control {
   font-weight: 500;
 }
 
+.topic-detail-header:has(.legal-section-number) > div:last-child {
+  position: relative;
+}
+
 .legal-section-number {
-  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
   font-size: 12px;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 4px;
-}
-
-.topic-detail-header:has(.legal-section-number) {
-  align-items: flex-start;
-}
-
-.topic-detail-header:has(.legal-section-number) .card-icon {
-  margin-top: 12px;
+  margin-bottom: 6px;
+  white-space: nowrap;
 }
 
 .legal-toc {
