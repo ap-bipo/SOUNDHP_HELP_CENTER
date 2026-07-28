@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open-Source Licenses — Noisy</title>
+  <meta name="description" content="Open-source software licenses used by SOUNDHP. Full attribution for all third-party packages including Flutter, Supabase, and more." />
+  <meta name="keywords" content="Noisy, SOUNDHP, Open Source, Licenses, Dependencies, Flutter, MIT, BSD, Apache" />
+  <meta name="theme-color" content="#000000" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">
+          <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
+        </div>
+        Noisy
+      </a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Help Center</a></li>
+        <li><a href="creator.html">Creator & Team</a></li>
+        <li><a href="contact.html">Report Bug</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="dependencies.html" class="active">Open-Source</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span class="material-icons-round">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="page-header container" style="text-align: center; padding-top: 160px; padding-bottom: 40px;">
+    <div class="hero-badge animate-in">
+      <span class="hero-badge-dot"></span>
+      Attribution & Acknowledgements
+    </div>
+    <h1 class="animate-in">Open-Source Licenses</h1>
+    <p class="animate-in" style="font-size: clamp(16px, 2.5vw, 20px); color: var(--text-secondary); max-width: 660px; margin: 0 auto 24px;">
+      SOUNDHP is built with the help of the following open-source software. We are grateful to the developers and communities behind these projects.
+    </p>
+    <div class="animate-in" style="display: inline-flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: center;">
+      <span class="legal-meta-tag">
+        <span class="material-icons-round" style="font-size: 16px;">update</span>
+        Generated: July 28, 2026
+      </span>
+      <span class="legal-meta-tag">
+        <span class="material-icons-round" style="font-size: 16px;">smartphone</span>
+        App Version: 1.0.0
+      </span>
+    </div>
+  </header>
+
+  <!-- License Summary Stats -->
+  <section class="container animate-in" style="padding: 30px 0 40px;">
+    <div class="dep-stats-grid">
+      <div class="dep-stat-card">
+        <span class="dep-stat-number">18</span>
+        <span class="dep-stat-label">Total Packages</span>
+      </div>
+      <div class="dep-stat-card">
+        <span class="dep-stat-number">3</span>
+        <span class="dep-stat-label">License Types</span>
+      </div>
+      <div class="dep-stat-card">
+        <span class="dep-stat-number">100%</span>
+        <span class="dep-stat-label">Open Source</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- License Type Summary Table -->
+  <section class="container animate-in" style="padding-bottom: 40px;">
+    <div class="topic-detail" style="margin-bottom: 0;">
+      <div class="topic-detail-header">
+        <div class="card-icon" style="margin-bottom: 0;"><span class="material-icons-round">pie_chart</span></div>
+        <h2>License Summary</h2>
+      </div>
+      <div class="topic-content">
+        <div class="legal-table-wrapper">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>License Type</th>
+                <th>Packages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="license-badge license-mit">MIT</span></td>
+                <td>supabase_flutter, cupertino_icons, flutter_svg, audioplayers, permission_handler, liquid_glass_renderer, audio_waveforms, file_picker, dio, provider</td>
+              </tr>
+              <tr>
+                <td><span class="license-badge license-bsd">BSD-3-Clause</span></td>
+                <td>Flutter, record, path_provider, cross_file, http, shared_preferences</td>
+              </tr>
+              <tr>
+                <td><span class="license-badge license-apache">Apache-2.0</span></td>
+                <td>google_mobile_ads, image_picker</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flutter Framework -->
+  <section class="section container">
+    <div class="section-header animate-in">
+      <h2>Framework</h2>
+      <p>The core platform powering SOUNDHP</p>
+    </div>
+
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">widgets</span></div>
+          <div>
+            <h3>Flutter</h3>
+            <span class="dep-publisher">Google / flutter.dev</span>
+          </div>
+        </div>
+        <span class="license-badge license-bsd">BSD-3-Clause</span>
+      </div>
+      <p class="dep-description">Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.</p>
+      <div class="dep-links">
+        <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">language</span> Website</a>
+        <a href="https://github.com/flutter/flutter" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Dependencies -->
+  <section class="section container" style="padding-top: 20px;">
+    <div class="section-header animate-in">
+      <h2>Direct Dependencies</h2>
+      <p>Third-party packages used directly by SOUNDHP</p>
+    </div>
+
+    <!-- google_mobile_ads -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">ads_click</span></div>
+          <div>
+            <h3>google_mobile_ads</h3>
+            <span class="dep-publisher">google.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^6.0.0</span>
+          <span class="license-badge license-apache">Apache-2.0</span>
+        </div>
+      </div>
+      <p class="dep-description">Flutter plugin for Google Mobile Ads, supporting banner, interstitial (full-screen), rewarded, and native ads.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/google_mobile_ads" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/googleads/googleads-mobile-flutter" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- supabase_flutter -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">cloud</span></div>
+          <div>
+            <h3>supabase_flutter</h3>
+            <span class="dep-publisher">supabase.io</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^2.12.0</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">Flutter integration for Supabase. This package makes it simple for developers to build secure and scalable products.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/supabase_flutter" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/supabase/supabase-flutter" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- cupertino_icons -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">apple</span></div>
+          <div>
+            <h3>cupertino_icons</h3>
+            <span class="dep-publisher">flutter.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^1.0.8</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">Default icons asset used by Flutter's Cupertino widgets. Based on Apple's SF Symbols font.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/cupertino_icons" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/flutter/packages/tree/main/third_party/packages/cupertino_icons" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- flutter_svg -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">image</span></div>
+          <div>
+            <h3>flutter_svg</h3>
+            <span class="dep-publisher">flutter.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^2.2.3</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">An SVG rendering and widget library for Flutter, allowing SVG files to be rendered as Flutter widgets.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/flutter_svg" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/flutter/packages/tree/main/packages/flutter_svg" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- image_picker -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">photo_camera</span></div>
+          <div>
+            <h3>image_picker</h3>
+            <span class="dep-publisher">flutter.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^1.2.1</span>
+          <span class="license-badge license-apache">Apache-2.0</span>
+        </div>
+      </div>
+      <p class="dep-description">Flutter plugin for selecting images from the device's image library, or taking new pictures with the camera.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/image_picker" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/flutter/packages/tree/main/packages/image_picker" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- record -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">mic</span></div>
+          <div>
+            <h3>record</h3>
+            <span class="dep-publisher">cow-level.ovh</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^6.2.0</span>
+          <span class="license-badge license-bsd">BSD-3-Clause</span>
+        </div>
+      </div>
+      <p class="dep-description">Audio recorder from microphone to file or stream with multiple codecs, bit rate, and sampling rate options.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/record" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/llfbandit/record" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- audioplayers -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">headphones</span></div>
+          <div>
+            <h3>audioplayers</h3>
+            <span class="dep-publisher">blue-fire.xyz</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^6.5.1</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">A Flutter plugin to play multiple audio files simultaneously on all platforms.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/audioplayers" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/bluefireteam/audioplayers" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- path_provider -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">folder</span></div>
+          <div>
+            <h3>path_provider</h3>
+            <span class="dep-publisher">flutter.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^2.1.2</span>
+          <span class="license-badge license-bsd">BSD-3-Clause</span>
+        </div>
+      </div>
+      <p class="dep-description">Flutter plugin for finding commonly used locations on the filesystem (temp directory, documents directory, etc.).</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/path_provider" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/flutter/packages/tree/main/packages/path_provider" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- permission_handler -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">security</span></div>
+          <div>
+            <h3>permission_handler</h3>
+            <span class="dep-publisher">baseflow.com</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^12.0.1</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">Permission plugin for Flutter that provides a cross-platform API to request and check permissions.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/permission_handler" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/Baseflow/flutter-permission-handler" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- cross_file -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">description</span></div>
+          <div>
+            <h3>cross_file</h3>
+            <span class="dep-publisher">flutter.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^0.3.3</span>
+          <span class="license-badge license-bsd">BSD-3-Clause</span>
+        </div>
+      </div>
+      <p class="dep-description">An abstraction to allow working with files across multiple platforms.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/cross_file" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/flutter/packages/tree/main/packages/cross_file" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- http -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">http</span></div>
+          <div>
+            <h3>http</h3>
+            <span class="dep-publisher">dart.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^1.2.0</span>
+          <span class="license-badge license-bsd">BSD-3-Clause</span>
+        </div>
+      </div>
+      <p class="dep-description">A composable, multi-platform, Future-based API for HTTP requests.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/http" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/dart-lang/http" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- liquid_glass_renderer -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">blur_on</span></div>
+          <div>
+            <h3>liquid_glass_renderer</h3>
+            <span class="dep-publisher">whynotmake.it</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^0.2.0-dev.4</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">The raw renderer for a liquid glass (frosted glass) effect in Flutter. Creates stunning, customizable glass-like surfaces.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/liquid_glass_renderer" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/whynotmake-it/flutter_liquid_glass" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- audio_waveforms -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">graphic_eq</span></div>
+          <div>
+            <h3>audio_waveforms</h3>
+            <span class="dep-publisher">simform.com</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^2.0.2</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">A Flutter package that provides audio waveform visualization for recording and playback, with custom styling options.</p>
+      <div class="callout" style="margin-top: 12px; margin-bottom: 12px;">
+        <strong>Note:</strong> This project uses a local fork (<code>packages/audio_waveforms</code>) with modifications.
+      </div>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/audio_waveforms" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/SimformSolutionsPvtLtd/audio_waveforms" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- file_picker -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">attach_file</span></div>
+          <div>
+            <h3>file_picker</h3>
+            <span class="dep-publisher">miguelruivo.com</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^10.3.10</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">A package that allows you to use a native file explorer to pick single or multiple files, with extension filtering support.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/file_picker" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/miguelpruivo/flutter_file_picker" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- dio -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">sync_alt</span></div>
+          <div>
+            <h3>dio</h3>
+            <span class="dep-publisher">flutterchina.club</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^5.4.0</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">A powerful HTTP networking package for Dart/Flutter, supporting interceptors, global configuration, form data, request cancellation, file uploading, timeout, and more.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/dio" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/cfug/dio" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- provider -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">account_tree</span></div>
+          <div>
+            <h3>provider</h3>
+            <span class="dep-publisher">dash-overflow.net</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^6.1.5+1</span>
+          <span class="license-badge license-mit">MIT</span>
+        </div>
+      </div>
+      <p class="dep-description">A wrapper around InheritedWidget to make state management easier and more reusable.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/provider" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/rrousselGit/provider" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+    <!-- shared_preferences -->
+    <div class="dep-card animate-in">
+      <div class="dep-card-header">
+        <div class="dep-card-title">
+          <div class="card-icon" style="margin-bottom: 0; width: 44px; height: 44px;"><span class="material-icons-round" style="font-size: 22px;">save</span></div>
+          <div>
+            <h3>shared_preferences</h3>
+            <span class="dep-publisher">flutter.dev</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="dep-version">^2.2.3</span>
+          <span class="license-badge license-bsd">BSD-3-Clause</span>
+        </div>
+      </div>
+      <p class="dep-description">Flutter plugin for reading and writing simple key-value pairs to persistent storage on all platforms.</p>
+      <div class="dep-links">
+        <a href="https://pub.dev/packages/shared_preferences" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">inventory_2</span> pub.dev</a>
+        <a href="https://github.com/flutter/packages/tree/main/packages/shared_preferences" target="_blank" rel="noopener noreferrer"><span class="material-icons-round">code</span> Repository</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- License Texts -->
+  <section class="section container" style="padding-top: 20px;">
+    <div class="section-header animate-in">
+      <h2>License Texts</h2>
+      <p>Full text of the open-source licenses used</p>
+    </div>
+
+    <!-- MIT -->
+    <div class="topic-detail animate-in">
+      <div class="topic-detail-header">
+        <div class="card-icon" style="margin-bottom: 0;"><span class="material-icons-round">description</span></div>
+        <h2>MIT License</h2>
+      </div>
+      <div class="topic-content">
+        <pre class="legal-code-block">Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+      </div>
+    </div>
+
+    <!-- BSD-3-Clause -->
+    <div class="topic-detail animate-in">
+      <div class="topic-detail-header">
+        <div class="card-icon" style="margin-bottom: 0;"><span class="material-icons-round">description</span></div>
+        <h2>BSD-3-Clause License</h2>
+      </div>
+      <div class="topic-content">
+        <pre class="legal-code-block">Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+      </div>
+    </div>
+
+    <!-- Apache-2.0 -->
+    <div class="topic-detail animate-in">
+      <div class="topic-detail-header">
+        <div class="card-icon" style="margin-bottom: 0;"><span class="material-icons-round">description</span></div>
+        <h2>Apache License 2.0</h2>
+      </div>
+      <div class="topic-content">
+        <pre class="legal-code-block">Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</pre>
+      </div>
+    </div>
+
+    <!-- Closing Note -->
+    <div class="animate-in" style="text-align: center; padding: 40px 0 0;">
+      <p style="color: var(--text-muted); font-style: italic; font-size: 15px;">This document lists all direct open-source dependencies used by SOUNDHP. Transitive (indirect) dependencies are not listed individually but inherit the licenses of their parent packages. For full license texts, please visit each package's repository linked above.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-brand">
+        <div class="navbar-logo" style="width: 28px; height: 28px; font-size: 16px;">
+          <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
+        </div>
+        Noisy
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Help Center</a>
+        <a href="creator.html">Creator & Team</a>
+        <a href="contact.html">Report Bug</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="dependencies.html">Open-Source</a>
+        <a href="mailto:soundhp.team@gmail.com">soundhp.team@gmail.com</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Noisy Team. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
