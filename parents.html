@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parent Center — Noisy</title>
+  <meta name="description" content="Noisy Parent Center. A comprehensive safety and privacy guide for parents and guardians whose teens use Noisy." />
+  <meta name="keywords" content="Noisy, Parent Center, Teen Safety, COPPA, Parental Controls, Voice Social App, Family Safety" />
+  <meta name="theme-color" content="#000000" />
+  
+  <script>
+    (function() {
+      const theme = localStorage.getItem('noisy-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">
+          <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
+        </div>
+        Noisy
+      </a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Help Center</a></li>
+        <li><a href="safety.html">Safety Center</a></li>
+        <li><a href="parents.html" class="active">Parent Center</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="creator.html">Creator &amp; Team</a></li>
+        <li><a href="contact.html">Report Bug</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+          <svg class="sun-and-moon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24">
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+            <g class="sun-beams" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span class="material-icons-round">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Parent Center Hero -->
+  <header class="center-hero container animate-in">
+    <div class="hero-badge" style="margin-bottom: 20px;">
+      <span class="hero-badge-dot" style="background: #3B82F6;"></span>
+      For Parents &amp; Guardians
+    </div>
+    <h1>Parent Center</h1>
+    <p>
+      Everything you need to know about Noisy: how our audio-first platform works, how we protect your teen's privacy, and practical conversation starters for families.
+    </p>
+  </header>
+
+  <!-- Letter to Parents / Overview -->
+  <section class="section container" style="padding-top: 0;">
+    <div class="card animate-in" style="padding: 36px 40px; max-width: 840px; margin: 0 auto;">
+      <h2 style="font-size: 24px; margin-bottom: 16px;">What is Noisy?</h2>
+      <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.7; margin-bottom: 16px;">
+        Noisy was designed to bring human authenticity back to digital social life. Instead of endless text feeds, performative photo filters, and addicting algorithms, Noisy lets users exchange short (under 60-second) voice notes with their <strong>real friends</strong>.
+      </p>
+      <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.7; margin-bottom: 0;">
+        Hearing a friend's real laughter, excitement, and voice nuance creates genuine emotional empathy. Most importantly, Noisy is built around closed mutual connections—meaning your teen is talking to friends they know, rather than broadcasting to strangers on the open internet.
+      </p>
+    </div>
+  </section>
+
+  <!-- Teen Safety Pillars -->
+  <section class="section container">
+    <div class="section-header animate-in">
+      <h2>Built-In Protections for Teens</h2>
+      <p>How we safeguard teens from online hazards</p>
+    </div>
+
+    <div class="safety-grid animate-in">
+      <div class="safety-card">
+        <div class="card-icon"><span class="material-icons-round">person_pin</span></div>
+        <h3>No Public Discovery Feed</h3>
+        <p>There is no public algorithmic explore feed. Strangers cannot stumble upon your teen's voice recordings or send unprompted audio messages.</p>
+      </div>
+
+      <div class="safety-card">
+        <div class="card-icon"><span class="material-icons-round">location_off</span></div>
+        <h3>Zero Location Tracking</h3>
+        <p>Noisy never asks for or tracks your teen's GPS location. Their whereabouts are completely private and never shared with anyone.</p>
+      </div>
+
+      <div class="safety-card">
+        <div class="card-icon"><span class="material-icons-round">phonelink_erase</span></div>
+        <h3>Instant Account Purge</h3>
+        <p>Teens and parents have the absolute right to delete all data at any moment. Account deletion completely purges all audio files from our storage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conversation Starters for Parents -->
+  <section class="section container">
+    <div class="section-header animate-in">
+      <h2>Tips &amp; Conversation Starters</h2>
+      <p>Questions you can ask your teen to encourage safe and healthy digital voice habits</p>
+    </div>
+
+    <div class="grid animate-in" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; max-width: 860px; margin: 0 auto;">
+      <div class="card" style="padding: 28px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <span class="material-icons-round" style="color: #3B82F6; font-size: 24px;">chat_bubble_outline</span>
+          <h3 style="font-size: 18px;">"Who are you connected with?"</h3>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 14.5px; line-height: 1.6;">
+          Encourage your teen to only accept connection requests from classmates and people they actually know in real life. Remind them that they never have to accept an invite.
+        </p>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <span class="material-icons-round" style="color: #8B5CF6; font-size: 24px;">record_voice_over</span>
+          <h3 style="font-size: 18px;">"Voice Tone &amp; Digital Empathy"</h3>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 14.5px; line-height: 1.6;">
+          Talk about how voice notes can convey warmth, but can also be hurtful if used sarcastically. Remind them not to say anything in an audio note that they wouldn't say in person.
+        </p>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <span class="material-icons-round" style="color: #10B981; font-size: 24px;">block</span>
+          <h3 style="font-size: 18px;">"Know how to block and report"</h3>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 14.5px; line-height: 1.6;">
+          Ensure your teen knows how to use the in-app Block and Report buttons if anyone ever makes them feel uncomfortable, pressured, or unsafe.
+        </p>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <span class="material-icons-round" style="color: #F59E0B; font-size: 24px;">schedule</span>
+          <h3 style="font-size: 18px;">"Balance and Boundaries"</h3>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 14.5px; line-height: 1.6;">
+          Establish clear screen-time routines during homework and bedtime. Remind teens that audio notifications don't require an immediate reply.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parent FAQ -->
+  <section class="section container">
+    <div class="section-header animate-in">
+      <h2>Frequently Asked Questions by Parents</h2>
+      <p>Direct answers regarding parental supervision and account controls</p>
+    </div>
+
+    <div class="faq-list animate-in" style="max-width: 820px; margin: 0 auto;">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Can strangers contact or listen to my teen on Noisy?</h3>
+          <span class="faq-toggle material-icons-round">add</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            No. Noisy is designed around mutual connections. Users can only send voice notes or direct messages to accounts they have mutually connected with. There is no open public audio feed.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Does Noisy collect my child's location or sell their data?</h3>
+          <span class="faq-toggle material-icons-round">add</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            No. We do not collect GPS location, and we never sell user data or audio recordings to advertisers, data brokers, or third parties.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How can a parent request account deletion for their teen?</h3>
+          <span class="faq-toggle material-icons-round">add</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Parents or guardians can email our team directly at <a href="mailto:soundhp.team@gmail.com" style="text-decoration: underline;">soundhp.team@gmail.com</a> with the subject "Parent Account Deletion Request" and provide the teen's registered email or @handle. We will promptly delete the account and all associated voice data.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>What happens to audio recordings when an account is deleted?</h3>
+          <span class="faq-toggle material-icons-round">add</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            All audio files are permanently and irreversibly removed from our cloud storage buckets. We do not maintain backups of deleted voice recordings.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locket-Style Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand">
+            <div class="navbar-logo" style="width: 32px; height: 32px;">
+              <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
+            </div>
+            Noisy
+          </a>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X (Twitter)">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="TikTok">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://github.com/ap-bipo" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <p class="footer-copy">&copy; 2026 Noisy Team. All rights reserved.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Download</h4>
+          <ul class="footer-col-links">
+            <li><a href="#">iOS (App Store)</a></li>
+            <li><a href="#">Android (Google Play)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">About</h4>
+          <ul class="footer-col-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="safety.html">Safety Center</a></li>
+            <li><a href="parents.html" style="color: var(--text-primary); font-weight: 600;">Parent Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Get in Touch</h4>
+          <ul class="footer-col-links">
+            <li><a href="index.html">Help Center</a></li>
+            <li><a href="creator.html">Creators &amp; Team</a></li>
+            <li><a href="contact.html">Report Bug</a></li>
+            <li><a href="mailto:soundhp.team@gmail.com">soundhp.team@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

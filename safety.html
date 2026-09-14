@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Report Bug & Contact — Noisy</title>
-  <meta name="description" content="Report a bug or contact the Noisy Team directly at soundhp.team@gmail.com." />
+  <title>Safety Center — Noisy</title>
+  <meta name="description" content="Noisy Safety Center. Learn about our safety tools, privacy features, community guidelines, and reporting options to keep voice conversations authentic and secure." />
+  <meta name="keywords" content="Noisy, Safety Center, Voice Safety, Report Abuse, Block User, Privacy, Community Guidelines" />
+  <meta name="theme-color" content="#000000" />
   
   <script>
     (function() {
@@ -33,12 +35,12 @@
       </a>
       <ul class="navbar-links" id="navLinks">
         <li><a href="index.html">Help Center</a></li>
-        <li><a href="safety.html">Safety Center</a></li>
+        <li><a href="safety.html" class="active">Safety Center</a></li>
         <li><a href="parents.html">Parent Center</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="creator.html">Creator &amp; Team</a></li>
-        <li><a href="contact.html" class="active">Report Bug</a></li>
+        <li><a href="contact.html">Report Bug</a></li>
       </ul>
       <div class="navbar-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
@@ -67,66 +69,151 @@
     </div>
   </nav>
 
-  <!-- Report Bug / Contact Form -->
-  <section class="section container" style="padding-top: 140px;">
+  <!-- Safety Center Hero -->
+  <header class="center-hero container animate-in">
+    <div class="hero-badge" style="margin-bottom: 20px;">
+      <span class="hero-badge-dot" style="background: #22C55E;"></span>
+      Trust &amp; Community Safety
+    </div>
+    <h1>Safety Center</h1>
+    <p>
+      At Noisy, we are building a voice-first sanctuary for genuine connection. Your security, emotional wellbeing, and voice privacy guide every feature we create.
+    </p>
+  </header>
+
+  <!-- Core Safety Principles -->
+  <section class="section container" style="padding-top: 0;">
     <div class="section-header animate-in">
-      <h2>Report a Bug or Get Support</h2>
-      <p>Encountered an issue or have feedback for Noisy? Send a report directly to the Noisy team.</p>
+      <h2>Our Core Safety Principles</h2>
+      <p>How Noisy protects your voice and interactions by design</p>
     </div>
 
-    <div class="form-card animate-in">
-      <form id="contactForm">
-        
-        <div class="form-group">
-          <label for="category">Category</label>
-          <select id="category" name="category" class="form-control" required>
-            <option value="Bug Report">Bug Report</option>
-            <option value="Account & Login Issue">Account &amp; Login Issue</option>
-            <option value="Data Deletion Request">Data Deletion Request</option>
-            <option value="Feature Feedback">Feature Feedback</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
+    <div class="safety-grid animate-in">
+      <div class="safety-card">
+        <div class="card-icon"><span class="material-icons-round">lock</span></div>
+        <h3>Mutual Connections Only</h3>
+        <p>Noisy has no public stranger feed or unsolicited direct messages. Voice notes and conversations can only ever be shared between users who have mutually agreed to connect.</p>
+      </div>
 
-        <div class="form-group">
-          <label for="subject">Issue Summary</label>
-          <input type="text" id="subject" name="subject" class="form-control" placeholder="E.g., Recording stops after 5 seconds..." required />
-        </div>
+      <div class="safety-card">
+        <div class="card-icon"><span class="material-icons-round">graphic_eq</span></div>
+        <h3>Voice Privacy by Default</h3>
+        <p>You have granular control over who hears your voice. Before posting an audio note, you can select whether it goes to all mutual connections or only specific close friends.</p>
+      </div>
 
-        <div class="form-group">
-          <label for="device">Device &amp; Operating System</label>
-          <input type="text" id="device" name="device" class="form-control" placeholder="E.g., iPhone 15 Pro (iOS 17.4) / Samsung Galaxy S23" />
-        </div>
-
-        <div class="form-group">
-          <label for="body">Detailed Description &amp; Steps to Reproduce</label>
-          <textarea id="body" name="body" class="form-control" placeholder="Please describe what happened, what you expected, and steps to reproduce the issue..." required></textarea>
-        </div>
-
-        <!-- Submission Action Buttons -->
-        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
-          <button type="button" id="sendGmailBtn" class="btn" style="flex: 1; min-width: 220px; background: #EA4335; color: #FFFFFF;">
-            <span class="material-icons-round" style="font-size: 20px;">email</span>
-            Open in Gmail Web
-          </button>
-          
-          <button type="button" id="sendMailAppBtn" class="btn btn-secondary" style="flex: 1; min-width: 220px;">
-            <span class="material-icons-round" style="font-size: 20px;">open_in_new</span>
-            Open Default Mail App
-          </button>
-        </div>
-
-      </form>
-
-      <!-- Quick Gmail Link Card -->
-      <div class="callout" style="margin-top: 32px; text-align: center; background: rgba(255, 255, 255, 0.03); border-left: none; border: 1px solid var(--border-color);">
-        Or send an email directly to:<br/>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=soundhp.team@gmail.com" target="_blank" rel="noopener noreferrer" style="font-size: 16px; font-weight: 700; color: #FFFFFF; text-decoration: underline; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px;">
-          <span class="material-icons-round" style="font-size: 18px; color: #EA4335;">mark_email_read</span>
-          soundhp.team@gmail.com (Compose in Gmail)
-        </a>
+      <div class="safety-card">
+        <div class="card-icon"><span class="material-icons-round">shield</span></div>
+        <h3>Zero Tolerance for Abuse</h3>
+        <p>We do not tolerate harassment, hate speech, bullying, impersonation, or non-consensual voice sharing. Violating accounts are suspended and permanently banned.</p>
       </div>
     </div>
+  </section>
+
+  <!-- In-App Safety Tools Guide -->
+  <section class="section container">
+    <div class="section-header animate-in">
+      <h2>In-App Safety Tools</h2>
+      <p>Simple, effective controls to manage your safety and comfort at any time</p>
+    </div>
+
+    <div class="safety-guide-card animate-in">
+      <h3 style="font-size: 20px; display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <span class="material-icons-round guide-icon" style="color: #EA4335;">block</span>
+        How to Block a User
+      </h3>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;">
+        Blocking a user immediately breaks any connection, hides your profile, stops them from hearing your voice notes, and prevents them from messaging you:
+      </p>
+      <div class="safety-step">
+        <div class="safety-step-num">1</div>
+        <div class="safety-step-body">
+          <h4>Open the User's Profile</h4>
+          <p>Navigate to the profile of the user you want to block (via search or your connection list).</p>
+        </div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-step-num">2</div>
+        <div class="safety-step-body">
+          <h4>Tap More Options</h4>
+          <p>Tap the three dots (•••) icon located at the top right of their profile.</p>
+        </div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-step-num">3</div>
+        <div class="safety-step-body">
+          <h4>Confirm Block</h4>
+          <p>Select <strong>Block User</strong> and confirm. The user will not be notified that they were blocked.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="safety-guide-card animate-in">
+      <h3 style="font-size: 20px; display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <span class="material-icons-round guide-icon" style="color: #F59E0B;">flag</span>
+        How to Report Harmful Content
+      </h3>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;">
+        If you encounter content or behavior that violates our Community Guidelines, you can submit an urgent report to our moderation team:
+      </p>
+      <div class="safety-step">
+        <div class="safety-step-num">1</div>
+        <div class="safety-step-body">
+          <h4>Locate the Note or Message</h4>
+          <p>Tap the options menu on the offending voice post card or long-press the chat message.</p>
+        </div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-step-num">2</div>
+        <div class="safety-step-body">
+          <h4>Select Report</h4>
+          <p>Choose the relevant violation category (Harassment, Inappropriate Content, Spam, or Impersonation).</p>
+        </div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-step-num">3</div>
+        <div class="safety-step-body">
+          <h4>Moderation Review</h4>
+          <p>Our team reviews reports within 24 hours. If verified, the content is permanently deleted and the offending account may be terminated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Standards -->
+  <section class="section container">
+    <div class="section-header animate-in">
+      <h2>Community Guidelines for Voice</h2>
+      <p>The rules that keep Noisy a supportive and authentic environment</p>
+    </div>
+
+    <div class="grid animate-in" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+      <div class="card" style="border-left: 4px solid #22C55E;">
+        <h3 style="color: #22C55E; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span class="material-icons-round">check_circle</span>
+          What We Encourage
+        </h3>
+        <ul style="margin-left: 20px; color: var(--text-secondary); line-height: 1.7;">
+          <li>Sharing genuine daily thoughts and friendly banter.</li>
+          <li>Cheering on your close friends through voice notes.</li>
+          <li>Practicing mutual respect and positive communication.</li>
+          <li>Respecting other people's privacy and audio boundaries.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-left: 4px solid #EA4335;">
+        <h3 style="color: #EA4335; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span class="material-icons-round">cancel</span>
+          What Is Strictly Prohibited
+        </h3>
+        <ul style="margin-left: 20px; color: var(--text-secondary); line-height: 1.7;">
+          <li>Bullying, intimidation, harassment, or verbal threats.</li>
+          <li>Sharing private voice recordings outside of Noisy without consent.</li>
+          <li>Hate speech targeting race, religion, gender, or sexual orientation.</li>
+          <li>Promoting self-harm, illegal activities, or explicit adult content.</li>
+        </ul>
+      </div>
+    </div>
+
   </section>
 
   <!-- Locket-Style Footer -->
@@ -170,7 +257,7 @@
           <ul class="footer-col-links">
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
-            <li><a href="safety.html">Safety Center</a></li>
+            <li><a href="safety.html" style="color: var(--text-primary); font-weight: 600;">Safety Center</a></li>
             <li><a href="parents.html">Parent Center</a></li>
           </ul>
         </div>

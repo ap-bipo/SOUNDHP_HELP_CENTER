@@ -1,4 +1,41 @@
+// ── 0. Theme Manager (Dark / Light Mode) ──────────────────────────
+const getStoredTheme = () => localStorage.getItem('noisy-theme');
+const getPreferredTheme = () => {
+  const stored = getStoredTheme();
+  if (stored) return stored;
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+};
+
+const setTheme = (theme) => {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('noisy-theme', theme);
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute('content', theme === 'light' ? '#FAF8F5' : '#000000');
+  }
+};
+
+// Set theme immediately
+setTheme(getPreferredTheme());
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  // Bind Theme Toggle Buttons
+  const themeToggles = document.querySelectorAll('.theme-toggle');
+  themeToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+    });
+  });
+
+  // Listen to system preference changes
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+    if (!getStoredTheme()) {
+      setTheme(e.matches ? 'light' : 'dark');
+    }
+  });
 
   // ── 1. Navbar Scroll Effect ──────────────────────────────────────────
   const navbar = document.getElementById('navbar');
