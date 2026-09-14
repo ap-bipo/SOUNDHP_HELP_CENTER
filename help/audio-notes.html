@@ -3,40 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Report Bug & Contact — Noisy</title>
-  <meta name="description" content="Report a bug or contact the Noisy Team directly at soundhp.team@gmail.com." />
-  
+  <title>Audio Notes & Recording — Noisy Help Center</title>
+  <meta name="description" content="Learn how to record audio notes, review waveforms, add captions, and set post visibility on Noisy." />
+  <meta name="theme-color" content="#000000" />
   <script>
     (function() {
       const theme = localStorage.getItem('noisy-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container navbar-inner">
-      <a href="index.html" class="navbar-brand">
+      <a href="../index.html" class="navbar-brand">
         <div class="navbar-logo">
-          <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
+          <img src="../AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
         </div>
         Noisy
       </a>
       <ul class="navbar-links" id="navLinks">
-        <li><a href="index.html">Help Center</a></li>
-<li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-        <li><a href="creator.html">Creator &amp; Team</a></li>
-        <li><a href="contact.html" class="active">Report Bug</a></li>
+        <li><a href="../index.html" class="active">Help Center</a></li>
+<li><a href="../privacy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms of Service</a></li>
+        <li><a href="../creator.html">Creator &amp; Team</a></li>
+        <li><a href="../contact.html">Report Bug</a></li>
       </ul>
       <div class="navbar-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
@@ -65,76 +63,58 @@
     </div>
   </nav>
 
-  <!-- Report Bug / Contact Form -->
-  <section class="section container" style="padding-top: 140px;">
-    <div class="section-header animate-in">
-      <h2>Report a Bug or Get Support</h2>
-      <p>Encountered an issue or have feedback for Noisy? Send a report directly to the Noisy team.</p>
+  <!-- Collection Header -->
+  <header class="collection-hero container">
+    <div class="breadcrumb animate-in">
+      <a href="../index.html">All Collections</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Audio Notes & Recording</span>
+    </div>
+    <div class="collection-hero-icon animate-in">
+      <span class="material-icons-round">graphic_eq</span>
+    </div>
+    <h1 class="animate-in">Audio Notes & Recording</h1>
+    <p class="collection-subtitle animate-in">Learn how to record, review, and publish audio notes on Noisy</p>
+    <p class="collection-count animate-in">3 articles</p>
+  </header>
+
+  <!-- Article Groups -->
+  <section class="section container" style="padding-top: 0;">
+
+    <div class="article-group animate-in">
+      <h3 class="article-group-title">Recording Basics</h3>
+      <a href="articles/audio-notes/how-to-record.html" class="article-row">
+        How to Record an Audio Note
+        <span class="material-icons-round">chevron_right</span>
+      </a>
     </div>
 
-    <div class="form-card animate-in">
-      <form id="contactForm">
-        
-        <div class="form-group">
-          <label for="category">Category</label>
-          <select id="category" name="category" class="form-control" required>
-            <option value="Bug Report">Bug Report</option>
-            <option value="Account & Login Issue">Account &amp; Login Issue</option>
-            <option value="Data Deletion Request">Data Deletion Request</option>
-            <option value="Feature Feedback">Feature Feedback</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="subject">Issue Summary</label>
-          <input type="text" id="subject" name="subject" class="form-control" placeholder="E.g., Recording stops after 5 seconds..." required />
-        </div>
-
-        <div class="form-group">
-          <label for="device">Device &amp; Operating System</label>
-          <input type="text" id="device" name="device" class="form-control" placeholder="E.g., iPhone 15 Pro (iOS 17.4) / Samsung Galaxy S23" />
-        </div>
-
-        <div class="form-group">
-          <label for="body">Detailed Description &amp; Steps to Reproduce</label>
-          <textarea id="body" name="body" class="form-control" placeholder="Please describe what happened, what you expected, and steps to reproduce the issue..." required></textarea>
-        </div>
-
-        <!-- Submission Action Buttons -->
-        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
-          <button type="button" id="sendGmailBtn" class="btn" style="flex: 1; min-width: 220px; background: #EA4335; color: #FFFFFF;">
-            <span class="material-icons-round" style="font-size: 20px;">email</span>
-            Open in Gmail Web
-          </button>
-          
-          <button type="button" id="sendMailAppBtn" class="btn btn-secondary" style="flex: 1; min-width: 220px;">
-            <span class="material-icons-round" style="font-size: 20px;">open_in_new</span>
-            Open Default Mail App
-          </button>
-        </div>
-
-      </form>
-
-      <!-- Quick Gmail Link Card -->
-      <div class="callout" style="margin-top: 32px; text-align: center; background: rgba(255, 255, 255, 0.03); border-left: none; border: 1px solid var(--border-color);">
-        Or send an email directly to:<br/>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=soundhp.team@gmail.com" target="_blank" rel="noopener noreferrer" style="font-size: 16px; font-weight: 700; color: #FFFFFF; text-decoration: underline; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px;">
-          <span class="material-icons-round" style="font-size: 18px; color: #EA4335;">mark_email_read</span>
-          soundhp.team@gmail.com (Compose in Gmail)
-        </a>
-      </div>
+    <div class="article-group animate-in">
+      <h3 class="article-group-title">Reviewing & Editing</h3>
+      <a href="articles/audio-notes/reviewing-recording.html" class="article-row">
+        Reviewing Your Recording
+        <span class="material-icons-round">chevron_right</span>
+      </a>
     </div>
+
+    <div class="article-group animate-in">
+      <h3 class="article-group-title">Publishing</h3>
+      <a href="articles/audio-notes/captions-visibility.html" class="article-row">
+        Adding Captions & Post Visibility
+        <span class="material-icons-round">chevron_right</span>
+      </a>
+    </div>
+
   </section>
 
-  <!-- Locket-Style Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand-col">
-          <a href="index.html" class="footer-brand">
+          <a href="../index.html" class="footer-brand">
             <div class="navbar-logo" style="width: 32px; height: 32px;">
-              <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
+              <img src="../AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
             </div>
             Noisy
           </a>
@@ -154,7 +134,6 @@
           </div>
           <p class="footer-copy">&copy; 2026 Noisy Team. All rights reserved.</p>
         </div>
-
         <div>
           <h4 class="footer-col-title">Download</h4>
           <ul class="footer-col-links">
@@ -162,21 +141,19 @@
             <li><a href="#">Android (Google Play)</a></li>
           </ul>
         </div>
-
         <div>
           <h4 class="footer-col-title">About</h4>
           <ul class="footer-col-links">
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          </ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+</ul>
         </div>
-
         <div>
           <h4 class="footer-col-title">Get in Touch</h4>
           <ul class="footer-col-links">
-            <li><a href="index.html">Help Center</a></li>
-            <li><a href="creator.html">Creators &amp; Team</a></li>
-            <li><a href="contact.html">Report Bug</a></li>
+            <li><a href="../index.html">Help Center</a></li>
+            <li><a href="../creator.html">Creators &amp; Team</a></li>
+            <li><a href="../contact.html">Report Bug</a></li>
             <li><a href="https://soundhp.site" target="_blank" rel="noopener noreferrer">soundhp.site</a></li>
             <li><a href="mailto:soundhp.team@gmail.com">soundhp.team@gmail.com</a></li>
           </ul>
@@ -184,7 +161,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

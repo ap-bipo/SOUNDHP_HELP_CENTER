@@ -82,48 +82,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── 3. Live Search & Tag Filter ──────────────────────────────────────
   const searchInput = document.getElementById('searchInput');
-  const cards = document.querySelectorAll('.card');
-  const topicDetails = document.querySelectorAll('.topic-detail');
-  const faqItems = document.querySelectorAll('.faq-item');
+  const collectionCards = document.querySelectorAll('.collection-card');
+  const cqRows = document.querySelectorAll('.cq-row');
   const noResultsMsg = document.getElementById('noResults');
 
   function performSearch(query) {
     const searchTerm = query.toLowerCase().trim();
     let hasResults = false;
 
-    // Filter Quick Link Cards
-    cards.forEach(card => {
+    // Filter Collection Cards
+    collectionCards.forEach(card => {
       const searchData = card.getAttribute('data-search') || '';
       const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
-      const text = card.querySelector('p')?.textContent.toLowerCase() || '';
       
-      if (searchTerm === '' || searchData.includes(searchTerm) || title.includes(searchTerm) || text.includes(searchTerm)) {
-        card.style.display = 'block';
+      if (searchTerm === '' || searchData.includes(searchTerm) || title.includes(searchTerm)) {
+        card.style.display = 'flex';
         hasResults = true;
       } else {
         card.style.display = 'none';
       }
     });
 
-    // Filter Detailed Topics
-    topicDetails.forEach(topic => {
-      const text = topic.textContent.toLowerCase();
+    // Filter Common Questions
+    cqRows.forEach(row => {
+      const text = row.textContent.toLowerCase();
       if (searchTerm === '' || text.includes(searchTerm)) {
-        topic.style.display = 'block';
+        row.style.display = 'flex';
         hasResults = true;
       } else {
-        topic.style.display = 'none';
-      }
-    });
-
-    // Filter FAQs
-    faqItems.forEach(item => {
-      const text = item.textContent.toLowerCase();
-      if (searchTerm === '' || text.includes(searchTerm)) {
-        item.style.display = 'block';
-        hasResults = true;
-      } else {
-        item.style.display = 'none';
+        row.style.display = 'none';
       }
     });
 
@@ -150,19 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // Tag filter buttons click
-  const tagBtns = document.querySelectorAll('.tag-btn');
-  tagBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tagText = btn.getAttribute('data-tag') || btn.textContent.trim();
-      if (searchInput) {
-        searchInput.value = tagText;
-        performSearch(tagText);
-        searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    });
-  });
 
   // ── 4. Contact Form Gmail & Mail Compose Handler ─────────────────────
   const contactForm = document.getElementById('contactForm');
