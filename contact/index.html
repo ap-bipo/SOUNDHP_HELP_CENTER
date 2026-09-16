@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Audio Notes & Recording — Noisy Help Center</title>
-  <meta name="description" content="Learn how to record audio notes, review waveforms, add captions, and set post visibility on Noisy." />
-  <meta name="theme-color" content="#000000" />
+  <title>Report Bug &amp; Support — Noisy</title>
+  <meta name="description" content="Report a bug, submit feedback, or request assistance from the Noisy team." />
+  
   <script>
     (function() {
       const theme = localStorage.getItem('noisy-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -30,11 +32,11 @@
         Noisy
       </a>
       <ul class="navbar-links" id="navLinks">
-        <li><a href="../helpcenter/" class="active">Help Center</a></li>
-<li><a href="../privacy/">Privacy Policy</a></li>
+        <li><a href="../helpcenter/">Help Center</a></li>
+        <li><a href="../privacy/">Privacy Policy</a></li>
         <li><a href="../terms/">Terms of Service</a></li>
         <li><a href="../creator/">Creator &amp; Team</a></li>
-        <li><a href="../contact/">Report Bug</a></li>
+        <li><a href="./" class="active">Report Bug</a></li>
       </ul>
       <div class="navbar-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
@@ -63,51 +65,69 @@
     </div>
   </nav>
 
-  <!-- Collection Header -->
-  <header class="collection-hero container">
-    <div class="breadcrumb animate-in">
-      <a href="../helpcenter/">All Collections</a>
-      <span class="breadcrumb-sep">›</span>
-      <span>Audio Notes & Recording</span>
-    </div>
-    <div class="collection-hero-icon animate-in">
-      <span class="material-icons-round">graphic_eq</span>
-    </div>
-    <h1 class="animate-in">Audio Notes & Recording</h1>
-    <p class="collection-subtitle animate-in">Learn how to record, review, and publish audio notes on Noisy</p>
-    <p class="collection-count animate-in">3 articles</p>
-  </header>
-
-  <!-- Article Groups -->
-  <section class="section container" style="padding-top: 0;">
-
-    <div class="article-group animate-in">
-      <h3 class="article-group-title">Recording Basics</h3>
-      <a href="articles/audio-notes/how-to-record.html" class="article-row">
-        How to Record an Audio Note
-        <span class="material-icons-round">chevron_right</span>
-      </a>
+  <!-- Report Bug / Contact Form -->
+  <section class="section container" style="padding-top: 140px;">
+    <div class="section-header animate-in">
+      <h2>Report a Bug or Get Support</h2>
+      <p>Encountered an issue or have feedback for Noisy? Send a report directly to the Noisy team.</p>
     </div>
 
-    <div class="article-group animate-in">
-      <h3 class="article-group-title">Reviewing & Editing</h3>
-      <a href="articles/audio-notes/reviewing-recording.html" class="article-row">
-        Reviewing Your Recording
-        <span class="material-icons-round">chevron_right</span>
-      </a>
-    </div>
+    <div class="form-card animate-in">
+      <form id="contactForm">
+        
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" class="form-control" required>
+            <option value="Bug Report">Bug Report</option>
+            <option value="Account &amp; Login Issue">Account &amp; Login Issue</option>
+            <option value="Data Deletion Request">Data Deletion Request</option>
+            <option value="Feature Feedback">Feature Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
 
-    <div class="article-group animate-in">
-      <h3 class="article-group-title">Publishing</h3>
-      <a href="articles/audio-notes/captions-visibility.html" class="article-row">
-        Adding Captions & Post Visibility
-        <span class="material-icons-round">chevron_right</span>
-      </a>
-    </div>
+        <div class="form-group">
+          <label for="subject">Issue Summary</label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="E.g., Recording stops after 5 seconds..." required />
+        </div>
 
+        <div class="form-group">
+          <label for="device">Device &amp; Operating System</label>
+          <input type="text" id="device" name="device" class="form-control" placeholder="E.g., iPhone 15 Pro (iOS 17.4) / Samsung Galaxy S23" />
+        </div>
+
+        <div class="form-group">
+          <label for="body">Detailed Description &amp; Steps to Reproduce</label>
+          <textarea id="body" name="body" class="form-control" placeholder="Please describe what happened, what you expected, and steps to reproduce the issue..." required></textarea>
+        </div>
+
+        <!-- Submission Action Buttons -->
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
+          <button type="button" id="sendGmailBtn" class="btn" style="flex: 1; min-width: 220px; background: #EA4335; color: #FFFFFF;">
+            <span class="material-icons-round" style="font-size: 20px;">email</span>
+            Open in Gmail Web
+          </button>
+          
+          <button type="button" id="sendMailAppBtn" class="btn btn-secondary" style="flex: 1; min-width: 220px;">
+            <span class="material-icons-round" style="font-size: 20px;">open_in_new</span>
+            Open Default Mail App
+          </button>
+        </div>
+
+      </form>
+
+      <!-- Quick Gmail Link Card -->
+      <div class="callout" style="margin-top: 32px; text-align: center; background: rgba(255, 255, 255, 0.03); border-left: none; border: 1px solid var(--border-color);">
+        Or send an email directly to:<br/>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=soundhp.team@gmail.com" target="_blank" rel="noopener noreferrer" style="font-size: 16px; font-weight: 700; color: #FFFFFF; text-decoration: underline; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px;">
+          <span class="material-icons-round" style="font-size: 18px; color: #EA4335;">mark_email_read</span>
+          soundhp.team@gmail.com (Compose in Gmail)
+        </a>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Locket-Style Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -129,11 +149,12 @@
               <svg width="19" height="19" viewBox="0 0 192 192" fill="currentColor"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468Z"/></svg>
             </a>
             <a href="https://soundhp.site" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Website">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="1" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </a>
           </div>
           <p class="footer-copy">&copy; 2026 Noisy Team. All rights reserved.</p>
         </div>
+
         <div>
           <h4 class="footer-col-title">Download</h4>
           <ul class="footer-col-links">
@@ -141,19 +162,21 @@
             <li><a href="#">Android (Google Play)</a></li>
           </ul>
         </div>
+
         <div>
           <h4 class="footer-col-title">About</h4>
           <ul class="footer-col-links">
             <li><a href="../privacy/">Privacy Policy</a></li>
             <li><a href="../terms/">Terms &amp; Conditions</a></li>
-</ul>
+          </ul>
         </div>
+
         <div>
           <h4 class="footer-col-title">Get in Touch</h4>
           <ul class="footer-col-links">
             <li><a href="../helpcenter/">Help Center</a></li>
             <li><a href="../creator/">Creators &amp; Team</a></li>
-            <li><a href="../contact/">Report Bug</a></li>
+            <li><a href="./" style="color: var(--text-primary); font-weight: 600;">Report Bug</a></li>
             <li><a href="https://soundhp.site" target="_blank" rel="noopener noreferrer">soundhp.site</a></li>
             <li><a href="mailto:soundhp.team@gmail.com">soundhp.team@gmail.com</a></li>
           </ul>
@@ -161,6 +184,7 @@
       </div>
     </div>
   </footer>
+
   <script src="../script.js"></script>
 </body>
 </html>

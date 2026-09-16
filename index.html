@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noisy — Help Center & Support</title>
-  <meta name="description" content="Official Noisy Support & Help Center. Learn how to record audio notes, customize your profile, connect with friends, send audio messages, and manage account privacy." />
-  <meta name="keywords" content="Noisy, Help Center, Support, Audio Social Network, Account Deletion, Privacy Policy, Noisy Team" />
+  <title>Noisy — Your friends are moving in</title>
+  <meta name="description" content="Noisy is an audio-first social app for your closest friends. Share real voice notes, speak your mind, and connect authentically without algorithmic feeds." />
+  <meta name="keywords" content="Noisy, Audio Social App, Voice Notes, Friends, Social Media, Voice Sharing, Gen Z" />
   <meta name="theme-color" content="#000000" />
   
   <script>
@@ -27,20 +27,22 @@
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container navbar-inner">
-      <a href="index.html" class="navbar-brand">
+      <a href="./" class="navbar-brand">
         <div class="navbar-logo">
           <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
         </div>
         Noisy
       </a>
       <ul class="navbar-links" id="navLinks">
-        <li><a href="index.html" class="active">Help Center</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-        <li><a href="creator.html">Creator &amp; Team</a></li>
-        <li><a href="contact.html">Report Bug</a></li>
+        <li><a href="helpcenter/" target="_blank" rel="noopener noreferrer">Help</a></li>
+        <li><a href="parents/" target="_blank" rel="noopener noreferrer">Parents</a></li>
+        <li><a href="creator/" target="_blank" rel="noopener noreferrer">Creators</a></li>
+        <li><a href="privacy/" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+        <li><a href="terms/" target="_blank" rel="noopener noreferrer">Terms</a></li>
+        <li><a href="contact/" target="_blank" rel="noopener noreferrer">Report Bug</a></li>
       </ul>
       <div class="navbar-actions">
+        <a href="#download" class="locket-nav-download">Download</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
           <svg class="sun-and-moon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24">
             <mask class="moon" id="moon-mask">
@@ -67,138 +69,181 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero container">
-    <div class="hero-badge animate-in">
-      <span class="hero-badge-dot"></span>
-      Official Noisy Support
+  <!-- Locket-Style Hero Section (Monochrome Black & White) -->
+  <header class="locket-hero container">
+    
+    <!-- Floating Sticker 1: Polaroid Friend Photo (Left) -->
+    <div class="floating-sticker sticker-polaroid-1" aria-hidden="true">
+      <img src="AnPhuoc.jpg" alt="Friend photo" />
+      <div class="polaroid-badge">
+        <span>🎙️</span>
+        <span>miss you!</span>
+      </div>
     </div>
-    <h1 class="animate-in">How can we help?</h1>
-    <p class="animate-in">Find step-by-step guides, privacy information, and answers for Noisy - the audio-first social app.</p>
 
-    <!-- Search Bar -->
-    <div class="hero-search animate-in">
-      <span class="material-icons-round hero-search-icon">search</span>
-      <input type="text" id="searchInput" placeholder="Search for articles..." autocomplete="off" />
+    <!-- Floating Sticker 2: Megaphone (Left Center) -->
+    <div class="floating-sticker sticker-megaphone" aria-hidden="true">
+      <span>📣</span>
+    </div>
+
+    <!-- Floating Sticker 3: Voice Note Wave Pill (Top Center) -->
+    <div class="floating-sticker sticker-voice-pill" aria-hidden="true">
+      <div class="voice-wave">
+        <span class="voice-bar"></span>
+        <span class="voice-bar"></span>
+        <span class="voice-bar"></span>
+        <span class="voice-bar"></span>
+      </div>
+      <span>0:14 audio note</span>
+    </div>
+
+    <!-- Floating Sticker 4: Polaroid Photo 2 (Right) -->
+    <div class="floating-sticker sticker-polaroid-2" aria-hidden="true">
+      <img src="PhucHung.jpg" alt="Friend photo" />
+    </div>
+
+    <!-- Floating Sticker 5: Typography Badge (Far Right) -->
+    <div class="floating-sticker sticker-repeater" aria-hidden="true">
+      <span>NOISY</span>
+      <span>NOISY</span>
+      <span>NOISY</span>
+      <span>NOISY</span>
+    </div>
+
+    <!-- Center Hero Content -->
+    <div class="locket-hero-inner animate-in">
+      <div class="locket-brand-lockup">
+        <div class="locket-hero-logo">
+          <img src="AppLogo.jpg" alt="Noisy App Logo" />
+        </div>
+        <h1 class="locket-hero-title">Noisy</h1>
+      </div>
+      
+      <p class="locket-hero-subtitle">
+        Your friends are moving in... with their real voices
+      </p>
+      <p class="locket-hero-subtext">
+        The intimate audio-first social platform for your closest friends. No addictive infinite scrolls, just authentic voice moments.
+      </p>
     </div>
   </header>
 
-  <!-- Collection Cards Grid -->
-  <section class="section container">
-    <div class="collection-grid animate-in" id="collectionsGrid">
+  <!-- 5 Locket-Style Portal Cards Grid (Clean Black & White with Pop-up Target) -->
+  <section class="locket-portal-section container">
+    <div class="locket-portal-grid animate-in">
 
-      <a href="help/audio-notes.html" class="collection-card" data-search="audio recording record audio note post waveform caption upload">
-        <div class="collection-icon"><span class="material-icons-round">graphic_eq</span></div>
-        <div class="collection-card-text">
-          <h3>Audio Notes & Recording</h3>
-          <p>3 articles</p>
+      <!-- 1. Help Center -->
+      <a href="helpcenter/" class="locket-portal-card" target="_blank" rel="noopener noreferrer">
+        <div class="locket-card-sticker">
+          <!-- Speech Bubble + Heart Support Sticker (B&W) -->
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="40" rx="36" ry="36" fill="var(--bg-subtle)" stroke="var(--border-color)" stroke-width="2"/>
+            <rect x="20" y="22" width="40" height="34" rx="14" fill="var(--text-primary)"/>
+            <path d="M30 56L24 64L38 56H30Z" fill="var(--text-primary)"/>
+            <circle cx="54" cy="32" r="13" fill="var(--bg-card)" stroke="var(--text-primary)" stroke-width="2.5"/>
+            <path d="M54 38C54 38 48 34 48 30C48 28.2 49.3 27 51 27C52.1 27 53.2 27.6 54 28.5C54.8 27.6 55.9 27 57 27C58.7 27 60 28.2 60 30C60 34 54 38 54 38Z" fill="var(--text-primary)"/>
+            <text x="34" y="44" font-family="'Inter', sans-serif" font-size="19" font-weight="900" fill="var(--bg-card)" text-anchor="middle">?</text>
+          </svg>
         </div>
+        <h2 class="locket-portal-title">
+          Help Center
+          <span class="material-icons-round pop-icon">open_in_new</span>
+        </h2>
+        <p class="locket-portal-desc">Get support and find common answers to all your questions.</p>
       </a>
 
-      <a href="help/profile.html" class="collection-card" data-search="profile avatar photo background handle username display name edit">
-        <div class="collection-icon"><span class="material-icons-round">person</span></div>
-        <div class="collection-card-text">
-          <h3>Profile & Customization</h3>
-          <p>2 articles</p>
+      <!-- 2. Parent Center -->
+      <a href="parents/" class="locket-portal-card" target="_blank" rel="noopener noreferrer">
+        <div class="locket-card-sticker">
+          <!-- Shield with Silhouette & Heart Sticker (B&W) -->
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="40" rx="36" ry="36" fill="var(--bg-subtle)" stroke="var(--border-color)" stroke-width="2"/>
+            <path d="M40 18L58 24V40C58 52 48 62 40 66C32 62 22 52 22 40V24L40 18Z" fill="var(--text-primary)"/>
+            <path d="M40 22L54 27V39C54 49 46 57.5 40 61C34 57.5 26 49 26 39V27L40 22Z" fill="var(--bg-card)"/>
+            <circle cx="40" cy="33" r="5.5" fill="var(--text-primary)"/>
+            <path d="M31 49C31 44 35 42 40 42C45 42 49 44 49 49V53H31V49Z" fill="var(--text-primary)"/>
+            <circle cx="40" cy="46" r="2.5" fill="var(--bg-card)"/>
+          </svg>
         </div>
+        <h2 class="locket-portal-title">
+          Parent Center
+          <span class="material-icons-round pop-icon">open_in_new</span>
+        </h2>
+        <p class="locket-portal-desc">Learn how Noisy stays safe, positive, and fun for teens.</p>
       </a>
 
-      <a href="help/connections.html" class="collection-card" data-search="connections friends network search request accept users find">
-        <div class="collection-icon"><span class="material-icons-round">people</span></div>
-        <div class="collection-card-text">
-          <h3>Connections & Friends</h3>
-          <p>2 articles</p>
+      <!-- 3. Privacy Policy -->
+      <a href="privacy/" class="locket-portal-card" target="_blank" rel="noopener noreferrer">
+        <div class="locket-card-sticker">
+          <!-- Security Lock & Shield Sticker (B&W) -->
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="40" rx="36" ry="36" fill="var(--bg-subtle)" stroke="var(--border-color)" stroke-width="2"/>
+            <rect x="25" y="34" width="30" height="26" rx="8" fill="var(--text-primary)"/>
+            <path d="M32 34V28C32 23.58 35.58 20 40 20C44.42 20 48 23.58 48 28V34" stroke="var(--text-primary)" stroke-width="4.5" stroke-linecap="round"/>
+            <circle cx="40" cy="45" r="3.5" fill="var(--bg-card)"/>
+            <path d="M40 48.5V52" stroke="var(--bg-card)" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
         </div>
+        <h2 class="locket-portal-title">
+          Privacy Policy
+          <span class="material-icons-round pop-icon">open_in_new</span>
+        </h2>
+        <p class="locket-portal-desc">See how voice data is protected with zero selling to advertisers.</p>
       </a>
 
-      <a href="help/messaging.html" class="collection-card" data-search="chat messaging dm private direct audio message auto play real time">
-        <div class="collection-icon"><span class="material-icons-round">chat</span></div>
-        <div class="collection-card-text">
-          <h3>Messaging & Audio Chat</h3>
-          <p>2 articles</p>
+      <!-- 4. Creators & Team -->
+      <a href="creator/" class="locket-portal-card" target="_blank" rel="noopener noreferrer">
+        <div class="locket-card-sticker">
+          <!-- Rocket with Soundwave Trail Sticker (B&W) -->
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="40" rx="36" ry="36" fill="var(--bg-subtle)" stroke="var(--border-color)" stroke-width="2"/>
+            <path d="M49 21C49 21 57 29 51 43L41 49L31 39L37 29C51 23 49 21 49 21Z" fill="var(--text-primary)"/>
+            <path d="M33 41L25 47L31 53L36 46L33 41Z" fill="var(--text-muted)"/>
+            <circle cx="44" cy="34" r="4.5" fill="var(--bg-card)"/>
+            <path d="M35 51C33 57 36 61 36 61C36 61 40 58 38 54L35 51Z" fill="var(--text-primary)"/>
+          </svg>
         </div>
+        <h2 class="locket-portal-title">
+          Creators &amp; Team
+          <span class="material-icons-round pop-icon">open_in_new</span>
+        </h2>
+        <p class="locket-portal-desc">Join the team building the social app that loves you back.</p>
       </a>
 
-      <a href="help/safety-center.html" class="collection-card" data-search="safety block report user abuse guidelines trust moderation rules reporting">
-        <div class="collection-icon"><span class="material-icons-round">security</span></div>
-        <div class="collection-card-text">
-          <h3>Safety Center</h3>
-          <p>3 articles</p>
+      <!-- 5. Report Bug -->
+      <a href="contact/" class="locket-portal-card" target="_blank" rel="noopener noreferrer">
+        <div class="locket-card-sticker">
+          <!-- Troubleshooting Bug & Diagnostics Sticker (B&W) -->
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="40" rx="36" ry="36" fill="var(--bg-subtle)" stroke="var(--border-color)" stroke-width="2"/>
+            <!-- Bug Body -->
+            <rect x="28" y="32" width="24" height="26" rx="12" fill="var(--text-primary)"/>
+            <!-- Bug Head -->
+            <path d="M32 29C32 24.58 35.58 21 40 21C44.42 21 48 24.58 48 29H32Z" fill="var(--text-primary)"/>
+            <!-- Antennae -->
+            <path d="M35 23L31 17M45 23L49 17" stroke="var(--text-primary)" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Legs -->
+            <path d="M28 38H21M28 45H20M28 52H22M52 38H59M52 45H60M52 52H58" stroke="var(--text-primary)" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Center check symbol -->
+            <circle cx="40" cy="44" r="3.5" fill="var(--bg-card)"/>
+          </svg>
         </div>
+        <h2 class="locket-portal-title">
+          Report Bug
+          <span class="material-icons-round pop-icon">open_in_new</span>
+        </h2>
+        <p class="locket-portal-desc">Submit technical glitches, voice bugs, or feature suggestions.</p>
       </a>
 
-      <a href="help/parent-center.html" class="collection-card" data-search="parents teen family guide protection coppa conversation safety habit">
-        <div class="collection-icon"><span class="material-icons-round">family_restroom</span></div>
-        <div class="collection-card-text">
-          <h3>Parent Center</h3>
-          <p>3 articles</p>
-        </div>
-      </a>
-
-      <a href="help/privacy-account.html" class="collection-card" data-search="privacy account deletion delete data security remove account safety apple eula">
-        <div class="collection-icon"><span class="material-icons-round">shield</span></div>
-        <div class="collection-card-text">
-          <h3>Privacy & Account</h3>
-          <p>3 articles</p>
-        </div>
-      </a>
-
-      <a href="help/troubleshooting.html" class="collection-card" data-search="faq common questions help support mic permissions troubleshooting otp">
-        <div class="collection-icon"><span class="material-icons-round">help_outline</span></div>
-        <div class="collection-card-text">
-          <h3>Troubleshooting</h3>
-          <p>5 articles</p>
-        </div>
-      </a>
-
-    </div>
-
-    <div id="noResults" style="display: none; text-align: center; margin-top: 40px; padding: 40px; background: var(--bg-card); border-radius: var(--radius-xl); border: 1px solid var(--border-color);">
-      <span class="material-icons-round" style="font-size: 48px; color: var(--text-muted); margin-bottom: 12px; display: block;">search_off</span>
-      <h3>No matching help articles found</h3>
-      <p style="color: var(--text-secondary); margin-top: 8px;">Try checking your spelling or search for broader keywords like "Recording", "Account", or "Privacy".</p>
     </div>
   </section>
 
-  <!-- Common Questions -->
-  <section class="section container">
-    <div class="common-questions animate-in">
-      <h2 class="common-questions-header">Common Questions</h2>
-      <div class="cq-grid">
-        <a href="help/articles/troubleshooting/microphone-not-working.html" class="cq-row">
-          Why isn't my microphone recording?
-          <span class="material-icons-round">chevron_right</span>
-        </a>
-        <a href="help/articles/troubleshooting/audio-post-length.html" class="cq-row">
-          How long can my audio posts be?
-          <span class="material-icons-round">chevron_right</span>
-        </a>
-        <a href="help/articles/troubleshooting/otp-not-received.html" class="cq-row">
-          I didn't receive my 6-digit OTP code
-          <span class="material-icons-round">chevron_right</span>
-        </a>
-        <a href="help/articles/troubleshooting/is-noisy-free.html" class="cq-row">
-          Is Noisy free to use?
-          <span class="material-icons-round">chevron_right</span>
-        </a>
-        <a href="help/articles/privacy-account/account-deletion.html" class="cq-row">
-          How do I delete my account?
-          <span class="material-icons-round">chevron_right</span>
-        </a>
-        <a href="help/articles/troubleshooting/contact-support.html" class="cq-row">
-          How do I contact the support team?
-          <span class="material-icons-round">chevron_right</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Locket-Style Footer -->
-  <footer class="footer">
+  <!-- Locket-Style Footer (Preserved exactly as requested) -->
+  <footer class="footer" id="download">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand-col">
-          <a href="index.html" class="footer-brand">
+          <a href="./" class="footer-brand">
             <div class="navbar-logo" style="width: 32px; height: 32px;">
               <img src="AppLogo.jpg" alt="Noisy Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" />
             </div>
@@ -215,7 +260,7 @@
               <svg width="19" height="19" viewBox="0 0 192 192" fill="currentColor"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468Z"/></svg>
             </a>
             <a href="https://soundhp.site" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Website">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="1" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </a>
           </div>
           <p class="footer-copy">&copy; 2026 Noisy Team. All rights reserved.</p>
@@ -232,17 +277,17 @@
         <div>
           <h4 class="footer-col-title">About</h4>
           <ul class="footer-col-links">
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy/">Privacy Policy</a></li>
+            <li><a href="terms/">Terms &amp; Conditions</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-col-title">Get in Touch</h4>
           <ul class="footer-col-links">
-            <li><a href="index.html">Help Center</a></li>
-            <li><a href="creator.html">Creators &amp; Team</a></li>
-            <li><a href="contact.html">Report Bug</a></li>
+            <li><a href="helpcenter/">Help Center</a></li>
+            <li><a href="creator/">Creators &amp; Team</a></li>
+            <li><a href="contact/">Report Bug</a></li>
             <li><a href="https://soundhp.site" target="_blank" rel="noopener noreferrer">soundhp.site</a></li>
             <li><a href="mailto:soundhp.team@gmail.com">soundhp.team@gmail.com</a></li>
           </ul>
