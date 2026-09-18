@@ -1992,10 +1992,10 @@ select.form-control {
 
 .locket-hero {
   position: relative;
-  padding: 130px 0 40px;
+  margin: 70px auto 0;
+  padding: 80px 0 40px;
   text-align: center;
   max-width: 1120px;
-  margin: 0 auto;
 }
 
 .locket-hero-inner {
@@ -2423,7 +2423,8 @@ select.form-control {
     display: none !important;
   }
   .locket-hero {
-    padding: 110px 0 30px;
+    margin: 60px auto 0;
+    padding: 50px 0 30px;
   }
   .locket-portal-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2431,6 +2432,10 @@ select.form-control {
 }
 
 @media (max-width: 580px) {
+  .locket-hero {
+    margin: 50px auto 0;
+    padding: 40px 0 25px;
+  }
   .locket-portal-grid {
     grid-template-columns: 1fr;
     gap: 14px;
